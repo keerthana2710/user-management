@@ -1,0 +1,201 @@
+/* General App Styles */
+.app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  color: #333;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e1e1e;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Error Styling */
+.error {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* User Table Styling */
+.user-table-wrapper {
+  margin-bottom: 40px;
+  overflow-x: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.user-table th, .user-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+}
+
+.user-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-table tr:hover {
+  background-color: #fafafa;
+}
+
+.user-table button {
+  padding: 8px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
+
+/* User Form Styling */
+.user-form-card {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.user-form-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #4caf50;
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+}
+
+/* Buttons Styling */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.submit-btn, .cancel-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 48%;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .user-form-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-btn, .cancel-btn {
+    width: 100%;
+  }
+
+  .user-table {
+    font-size: 0.9rem;
+  }
+
+  .user-table th, .user-table td {
+    padding: 10px;
+  }
+}
